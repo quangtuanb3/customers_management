@@ -1,0 +1,41 @@
+/* CSS for styling radio buttons as buttons */
+.visually-hidden {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.form-check-label {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.form-check-label:hover {
+    z-index: 2;
+}
+
+.form-check-input:checked + .form-check-label {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.form-check-input:focus + .form-check-label {
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+.form-check-label.btn {
+    border-radius: 6px;
+    width: 100px;
+}
+
+.form-check-label:not(:last-of-type) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.form-check-label:not(:first-of-type) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
